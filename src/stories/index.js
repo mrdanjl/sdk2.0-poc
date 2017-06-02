@@ -7,6 +7,7 @@ import Override from '../components/Override';
 import Text from '../components/Text';
 import Description from '../components/Description';
 
+
 storiesOf('FormCorp', module)
   .add('Basic form', () => (
     <FormCorp></FormCorp>
@@ -23,13 +24,17 @@ storiesOf('FormCorp', module)
     );
   })
   .add('Override by Field Id', () => {
-    const foo = foo => (
-      <h3>Override by ID - 1</h3>
-    );
+    class FieldOverride extends React.Component {
+      render() {
+        return (
+          <h4>Override by Field ID - 1</h4>
+        )
+      }
+    }
 
     return (
-      <FormCorp >
-        <Override id="1" component={foo} />
+      <FormCorp id="asdfsaf" key="asdfasdf">
+        <Override id="1" component={FieldOverride} />
       </FormCorp>
     )
   });

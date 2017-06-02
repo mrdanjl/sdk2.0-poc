@@ -12,8 +12,8 @@ class FormCorp extends Component {
     // moved in later stages to a backend
     this.state = {
       schema: [
-        { id: '1', type: 'text', name: 'Foo', attributes: {}, },
-        { id: '2', type: 'text', name: 'Bar', attributes: {}, },
+        { id: '1', type: 'text', name: 'Foo', attributes: { label: 'Foo', }, },
+        { id: '2', type: 'text', name: 'Bar', attributes: { label: 'Bar', }, },
         { id: '3', type: 'description', name: 'Baz', attributes: { text: 'Baz', }, },
       ],
       overrides: [],

@@ -4,10 +4,6 @@ import PropTypes from 'prop-types';
 import Description from '../components/Description';
 
 class DescriptionContainer extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div class="field-group">
