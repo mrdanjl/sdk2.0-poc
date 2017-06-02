@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Text from '../components/Description';
+import Description from '../components/Description';
 
 class DescriptionContainer extends Component {
   constructor() {

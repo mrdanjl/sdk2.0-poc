@@ -13,7 +13,7 @@ storiesOf('FormCorp', module)
   ))
   .add('Override Text Fields', () => {
     const foo = foo => (
-      <div>Foo</div>
+      <h3>Override by Type - Text</h3>
     );
 
     return (
@@ -24,7 +24,7 @@ storiesOf('FormCorp', module)
   })
   .add('Override by Field Id', () => {
     const foo = foo => (
-      <div>Foo</div>
+      <h3>Override by ID - 1</h3>
     );
 
     return (

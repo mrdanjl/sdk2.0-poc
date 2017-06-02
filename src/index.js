@@ -12,9 +12,9 @@ class FormCorp extends Component {
     // moved in later stages to a backend
     this.state = {
       schema: [
-        { id: 1, type: 'text', name: 'Foo' },
-        { id: 2, type: 'text', name: 'Bar' },
-        { id: 3, type: 'description', name: 'Baz', text: 'Hello Sir', },
+        { id: '1', type: 'text', name: 'Foo', attributes: {}, },
+        { id: '2', type: 'text', name: 'Bar', attributes: {}, },
+        { id: '3', type: 'description', name: 'Baz', attributes: { text: 'Baz', }, },
       ],
       overrides: [],
     };
@@ -40,7 +40,7 @@ class FormCorp extends Component {
     return (
       <form>
         {this.state.schema.map((field) => {
-          const FieldComponent = connectField(field, this.overrides);
+          const FieldComponent = connectField(field, this.state.overrides);
           return <FieldComponent key={field.id} />;
         })}
       </form>

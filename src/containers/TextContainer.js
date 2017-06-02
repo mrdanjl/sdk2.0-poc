@@ -10,8 +10,8 @@ class TextContainer extends Component {
 
   render() {
     return (
-      <div class="field-group">
-        <label class="field-label">
+      <div className="field-group">
+        <label className="field-label">
           {this.props.name}
           <Text />
         </label>
